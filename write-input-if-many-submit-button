@@ -1,0 +1,17 @@
+document.addEventListener("DOMContentLoaded", function() {
+
+	var buttons = document.getElementsByClassName("btn-painters");
+
+	for(var i = 0; i < buttons.length; i++) {
+		buttons[i].addEventListener("click", writeHiddenInputName);
+	}
+
+	function writeHiddenInputName(){
+		var hname = document.querySelector(".select-hidden-name").value;
+		var hlastname = document.querySelector(".select-hidden-lastname").value;
+
+		document.getElementsByClassName("name-element")[0].value = hname + " " + hlastname;
+	}
+
+
+});
