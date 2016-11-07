@@ -1,0 +1,6 @@
+function writeFullDate(){
+	var day = document.querySelector(".select-hidden-day").value;
+	var month = document.querySelector(".select-hidden-month").value;
+	var year = document.querySelector(".select-hidden-year").value;
+	document.querySelector('[name="PERSONAL_BIRTHDAY"]').value = day + "." + month + "." + year;
+}
